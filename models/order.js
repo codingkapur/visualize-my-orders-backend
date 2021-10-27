@@ -22,7 +22,7 @@ const OrdersSchema = new mongoose.Schema({
   },
   time: {
     type: Date,
-    default: Date.now(),
+    default: Date.now,
   },
   item: {
     type: String,
