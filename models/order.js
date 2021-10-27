@@ -39,7 +39,7 @@ const OrdersSchema = new mongoose.Schema({
   delivery_status: {
     type: String,
     required: [true, "Must provide delivery status"],
-    enum : ["Not Delivered", "Delivered"],
+    enum : ["Not Delivered", "Delivered", "In Transit"],
 
   },
   payment_status : {
