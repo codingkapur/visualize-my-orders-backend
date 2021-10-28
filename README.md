@@ -1,6 +1,6 @@
 # OMS - ORDERS MANAGEMENT SYSTEM
 
-Receive orders for your business and visualize them in this application. Perform CRUD operations. Sort by status. Stay on topm of deliveries. 
+Receive orders for your business and visualize them in this application. Perform CRUD operations. Sort by status. Stay on top of deliveries. 
 Manage your orders with ease, saving time and energy to focus on providing the best possbile service to your customers and growing your business!
 
 ## Features
