@@ -20,7 +20,7 @@ const OrdersSchema = new mongoose.Schema({
     maxlength: 10,
     minlength: 10,
   },
-  time: {
+  date: {
     type: Date,
     default: Date.now,
   },
@@ -46,7 +46,10 @@ const OrdersSchema = new mongoose.Schema({
     type: String,
     required: [true, "Must provide payment status"],
     enum : ["Paid", "On Delivery"],
-    
+  },
+  email : {
+    type: String,
+    required: [true, "Must provide email"]
   }
 });
 
