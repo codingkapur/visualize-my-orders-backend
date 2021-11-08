@@ -1,8 +1,20 @@
 const Order = require("../models/order");
 
 const getAllOrders = async (req, res) => {
+  const {sort} = req.query;
+  const queryObject = {};
+
+  let results = Order.find(queryObject);
+
+  if(sort){
+    const sortParams = sort;
+    const sortList = results.sort(sortParams);
+  }
+  else {
+    results = results.sort('name');
+  }
   try {
-    const orders = await Order.find({});
+    const orders = await results;
     if (!orders) {
       return res.status(404).send("No Orders Found");
     }
